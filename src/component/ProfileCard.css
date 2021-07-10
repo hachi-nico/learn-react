@@ -1,0 +1,16 @@
+.wrapper {
+  background-color: slateblue;
+  width: 300px;
+  padding: 1em;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.logo {
+  margin: 0 4em;
+}
+
+.name {
+  font-size: 2em;
+  font-weight: bold;
+}
