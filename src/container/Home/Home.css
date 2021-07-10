@@ -1,0 +1,9 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+}
+
+.heading {
+    text-align: center;
+}

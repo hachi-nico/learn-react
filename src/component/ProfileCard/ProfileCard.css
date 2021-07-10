@@ -1,16 +1,19 @@
-.wrapper {
+.profile-container {  
+  box-sizing: border-box;
   background-color: slateblue;
-  width: 300px;
+  width: 200px;
   padding: 1em;
   border: 1px solid black;
   text-align: center;
+  margin: 1em;
 }
 
 .logo {
-  margin: 0 4em;
+  width: 4em;
+  margin: 0 1em;
 }
 
 .name {
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: bold;
 }

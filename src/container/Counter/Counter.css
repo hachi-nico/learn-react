@@ -1,0 +1,19 @@
+.counter-container {
+    width: 100%;
+    background-color: cornflowerblue;
+    border: 1px solid black;
+}
+
+.counter-btn-container {
+    display: flex;
+    justify-content: center;
+    margin: 1em 0;
+}
+
+.counter-btn {
+    padding: 1em;
+    margin: 0 1em;
+    background-color: cadetblue;
+    border: 1px solid black;
+    cursor: pointer;
+}
