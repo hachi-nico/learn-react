@@ -7,7 +7,7 @@ class Home extends Component {
   render() {
     return (
       <Fragment>
-        <h1 className='heading'>My Profile</h1>
+        <h1 className='heading'>My Profiles</h1>
         <div className='container'>
           <ProfileCard name='nico' desc='Seorang yang jujur' />
           <ProfileCard name='akbar' desc='Seorang yang baik' />
