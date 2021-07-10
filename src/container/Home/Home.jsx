@@ -9,19 +9,22 @@ class Home extends Component {
     profileData: [],
   }
 
-  componentDidMount() {
-    // fetch('https://jsonplaceholder.typicode.com/users')
-    //   .then((response) => response.json())
-    //   .then((json) => {
-    //     this.setState({
-    //       profileData: json,
-    //     })
-    //   })
+  getProfileAPI = () => {
     axios.get('http://localhost:3000/profile').then((res) => {
       this.setState({
         profileData: res.data,
       })
     })
+  }
+
+  removeBtn = (val) => {
+    axios
+      .delete(`http://localhost:3000/profile/${val}`)
+      .then(() => this.getProfileAPI())
+  }
+
+  componentDidMount() {
+    this.getProfileAPI()
   }
 
   render() {
@@ -33,8 +36,8 @@ class Home extends Component {
             return (
               <ProfileCard
                 key={profileData.id}
-                name={profileData.name}
-                desc={profileData.desc}
+                data={profileData}
+                remove={this.removeBtn}
               />
             )
           })}
