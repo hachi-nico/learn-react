@@ -1,7 +1,8 @@
-.profile-container {  
+.profile-container { 
+  flex-grow: 1;  
   box-sizing: border-box;
   background-color: slateblue;
-  width: 200px;
+  width: 20em;
   padding: 1em;
   border: 1px solid black;
   text-align: center;
