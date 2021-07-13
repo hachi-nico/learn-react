@@ -27,6 +27,14 @@ class Home extends Component {
       .then(res => {
         window.alert('berhasil update');
         this.getProfileAPI()
+        this.setState({
+          profileForm: {
+            id: 1,
+            name: "",
+            desc: "",
+          },
+          isUpdate: false,
+        });
       })
   }
 
@@ -50,6 +58,13 @@ class Home extends Component {
       .then(() => {
         alert('berhasil menambahkan data');
         this.getProfileAPI();
+        this.setState({
+          profileForm: {
+            id: 1,
+            name: "",
+            desc: "",
+          }          
+        })
       }, (err) => {
         window.alert('error:', err);
       })
