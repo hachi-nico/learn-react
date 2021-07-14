@@ -1,7 +1,8 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component } from 'react'
 import axios from 'axios'
 import './Home.css'
 import ProfileCard from '../../component/ProfileCard/ProfileCard'
+import Counter from '../Counter/Counter'
 
 class Home extends Component {
   state = {
@@ -99,8 +100,8 @@ class Home extends Component {
   }
 
   render() {
-    return (
-      <Fragment>
+    return (      
+      <div>
         <h1 className="heading">Tambah Data</h1>
         <div className="form-container">
           <label htmlFor="name">Nama</label>
@@ -140,8 +141,8 @@ class Home extends Component {
               />
             )
           })}
-        </div>
-      </Fragment>
+        </div>          
+      </div>      
     )
   }
 }
